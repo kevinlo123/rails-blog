@@ -1,53 +1,47 @@
 class PostsController < ApplicationController
    def index
-      @posts = [
-         {
-            :title => "First Post",
-            :content => "this is the content area",
-            :slug => "first-post",
-            :image_url => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUuehBOhSoZ1-UDjO3J5jOndvGLYBy6hN4FtIX1dzv-Yt9HhUX",
-            :feature => false
-         },
-         {
-            :title => "Top 10 Javascript Frameworks",
-            :content => "this is the content area",
-            :slug => "top-10-javascript-frameworks",
-            :image_url => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUuehBOhSoZ1-UDjO3J5jOndvGLYBy6hN4FtIX1dzv-Yt9HhUX",
-            :feature => false        
-         },
-         {
-            :title => "Top 10 PHP Frameworks",
-            :content => "this is the content area",
-            :slug => "top-10-php-frameworks",
-            :image_url => "https://i.kym-cdn.com/photos/images/original/001/183/505/a22.jpg",
-            :feature => true        
-         },
-         {
-            :title => "Top 10 Node Frameworks",
-            :content => "this is the content area",
-            :slug => "top-10-node-frameworks",
-            :image_url => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUuehBOhSoZ1-UDjO3J5jOndvGLYBy6hN4FtIX1dzv-Yt9HhUX",
-            :feature => false        
-         }
-      ]
+      @post = Post.all
    end
 
    def show
+      @post = Post.find(params[:id])
    end
 
    def new
+      @post = Post.new
    end
 
    def create
+      @post = Post.new(sanitize_params)
+      if @post.save
+         redirect_to @post
+      else
+         render html: "sorry it did not save"
+      end
    end
 
    def edit
-
+      @post = Post.find(params[:id])
+      @feature_String = "This is a feature post: "
    end
 
    def update
+      @post = Post.find(params[:id])
+      if @post.update(sanitize_params)
+         redirect_to @post
+      else
+         render html: "Sorry your post wasnt updated"
+      end
    end
 
    def destroy
+      @post = Post.find(params[:id])
+      @post.destroy
+      redirect_to root_path    
    end
+
+   private 
+      def sanitize_params
+         params.require(:post).permit(:title,:content,:slug,:image_url,:category_id,:feature)
+      end
 end

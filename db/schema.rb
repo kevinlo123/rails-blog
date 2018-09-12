@@ -11,12 +11,16 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 2018_09_11_142646) do
-   create_table "posts", force: :cascade do |t|
-      t.string "title"
-      t.text "content"
-      t.string "slug"
-      t.integer "category_id"
-      t.datetime "created_at", null: false
-      t.datetime "updated_at", null: false
-   end
+
+  create_table "posts", force: :cascade do |t|
+    t.string "title"
+    t.text "content"
+    t.string "slug"
+    t.string "image_url"
+    t.integer "category_id"
+    t.boolean "feature"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
 end
