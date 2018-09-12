@@ -6,13 +6,11 @@
                <header class="major">
                   <span class="date"><%= post.created_at.to_formatted_s(:long) %></span>
                   <h2><a href="#"><%= post.title %></a></h2>
-                  <p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-                  facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-                  amet nullam sed etiam veroeros.</p>
+                  <p class="blog-preview"><%= post.content %></p>
                </header>
-               <a href="#" class="image main"><img src="<%= post.image_url%>"/></a>
+               <a href="posts/<%= post.id %>" class="image main"><img src="<%= post.image_url%>"/></a>
                <ul class="actions">
-                  <li><a href="#" class="button big">Full Story</a></li>
+                  <li><a href="posts/<%= post.id %>" class="button big">Full Story</a></li>
                </ul>
          </article>
       <% end %>
@@ -25,27 +23,14 @@
                   <span class="date"><%= post.created_at.to_formatted_s(:long) %></span>
                   <h2><a href="#"><%= post.title %></a></h2>
                </header>
-               <a href="#" class="image fit"><img src="<%= post.image_url%>" alt="" /></a>
-               <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+               <a href="posts/<%= post.id %>" class="image fit"><img src="<%= post.image_url%>" alt="" /></a>
+               <p class="blog-preview not-feature"><%= post.content %></p>
                <ul class="actions">
-                  <li><a href="#" class="button">Full Story</a></li>
+                  <li><a href="posts/<%= post.id %>" class="button">Full Story</a></li>
                </ul>
             </article>
          <% end %>
       <% end %>
    </section>
-   <footer>
-      <div class="pagination">
-         <!--<a href="#" class="previous">Prev</a>-->
-         <a href="#" class="page active">1</a>
-         <a href="#" class="page">2</a>
-         <a href="#" class="page">3</a>
-         <span class="extra">&hellip;</span>
-         <a href="#" class="page">8</a>
-         <a href="#" class="page">9</a>
-         <a href="#" class="page">10</a>
-         <a href="#" class="next">Next</a>
-      </div>
-   </footer>
 </div>
 
