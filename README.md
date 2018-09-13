@@ -1,5 +1,5 @@
 # Travel Blog
-An open Travel Blog open to the public.
+An Travel Blog open to the public.
 
 **Link to project:** https://rails-travel-blog.herokuapp.com/
 
