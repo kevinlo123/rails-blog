@@ -276,7 +276,8 @@
 		var changeWord = setInterval(function(){
 			var randomWord = words[Math.floor(Math.random() * words.length - 1)];
 			$(".logo").html(randomWord);
-		},2000);
+      },2000);
+      
 
 	});		
 
