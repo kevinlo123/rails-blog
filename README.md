@@ -1,10 +1,6 @@
 # Travel Blog
 An Travel Blog open to the public.
 
-**Link to project:** https://rails-travel-blog.herokuapp.com/
-
-![alt tag](http://placecorgi.com/1200/650)
-
 * Ruby version: `Ruby 2.5.1p57`
 
 * Rails version: `Rails 5.2.1`
@@ -18,6 +14,11 @@ An Travel Blog open to the public.
 * Database initialization:`rake db:migrate`
 
 * Deployment instructions: The blog is connected to this github repo to deploy you want to push up to this repo and run `git push heroku master`
+
+**Link to project:** https://rails-travel-blog.herokuapp.com/
+
+<img width="1280" alt="screen shot 2018-09-13 at 3 11 17 pm" src="https://user-images.githubusercontent.com/29260507/45510154-63485780-b767-11e8-967e-3c1eab43feb5.png">
+<img width="1280" alt="screen shot 2018-09-13 at 3 11 06 pm" src="https://user-images.githubusercontent.com/29260507/45510166-6b07fc00-b767-11e8-8765-1fa0fb92c828.png">
 
 ## How It's Made:
 
