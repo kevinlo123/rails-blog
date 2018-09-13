@@ -1,24 +1,29 @@
-# README
+# Travel Blog
+An open Travel Blog open to the public.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Link to project:** https://rails-travel-blog.herokuapp.com/
 
-Things you may want to cover:
+![alt tag](http://placecorgi.com/1200/650)
 
-* Ruby version
+* Ruby version: `Ruby 2.5.1p57`
 
-* System dependencies
+* Rails version: `Rails 5.2.1`
+
+* System dependencies: `bundle install`
 
 * Configuration
 
-* Database creation
+* Database creation: `rake db:create`
 
-* Database initialization
+* Database initialization:`rake db:migrate`
 
-* How to run the test suite
+* Deployment instructions: The blog is connected to this github repo to deploy you want to push up to this repo and run `git push heroku master`
 
-* Services (job queues, cache servers, search engines, etc.)
+## How It's Made:
 
-* Deployment instructions
+**Tech used:** HTML, CSS/SCSS, JavaScript, Ruby, Rails, SqlLite, 
 
-* ...
+I built this project to further my knowledge with full stack development. The blog is a simple controller directing CRUD operations on the SqlLite database entries and rendering the result of those actions in the projects views as blog posts. I enjoy programming in ruby for the simplicity and the way it reads like english. Stay tuned for more!
+
+
+
