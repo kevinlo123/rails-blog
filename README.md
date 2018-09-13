@@ -7,8 +7,6 @@ An Travel Blog open to the public.
 
 * System dependencies: `bundle install`
 
-* Configuration
-
 * Database creation: `rake db:create`
 
 * Database initialization:`rake db:migrate`
