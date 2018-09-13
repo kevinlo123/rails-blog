@@ -278,7 +278,14 @@
 			$(".logo").html(randomWord);
       },2000);
       
-
+      $(".actions").on("click", function(){
+         var el = $("#main")[0];
+         el.scrollIntoView({
+            block: 'start',
+            behavior: 'smooth' 
+         });
+      });
+      
 	});		
 
 })(jQuery);
