@@ -17,6 +17,7 @@ An Travel Blog open to the public.
 
 **Link to project:** https://rails-travel-blog.herokuapp.com/
 
+# Screen Shots
 <img width="1280" alt="screen shot 2018-09-13 at 3 11 17 pm" src="https://user-images.githubusercontent.com/29260507/45510154-63485780-b767-11e8-967e-3c1eab43feb5.png">
 <img width="1280" alt="screen shot 2018-09-13 at 3 11 06 pm" src="https://user-images.githubusercontent.com/29260507/45510166-6b07fc00-b767-11e8-8765-1fa0fb92c828.png">
 
