@@ -1,15 +1,15 @@
 <div id="main">
-	<section class="post">
-		<header class="major">
-		 <span class="date"><%= @post.created_at.to_formatted_s(:long) %></span>
-			<h1><%= @post.title %></h1>
-		</header>
-		<div class="image main"><img src="<%= @post.image_url %>" alt="" /></div>
-		<p><%= @post.content %></p>
+   <section class="post">
+      <header class="major">
+	 <span class="date"><%= @post.created_at.to_formatted_s(:long) %></span>
+	 <h1><%= @post.title %></h1>
+      </header>
+      <div class="image main"><img src="<%= @post.image_url %>" alt="" /></div>
+      <p><%= @post.content %></p>
       <a href="/"><i class="fas fa-arrow-left"></i> Go back</a><br>
       <a href="/posts/<%= @post.id %>/edit"><i class="fas fa-ellipsis-h"></i> Edit Blog</a><br>
       <a class="btn btn-sm" href="/posts/<%= @post.id %>" data-method="delete">
          <i class="fa fa-trash"></i> <span>Delete</span>
       </a>
-	</section>
+   </section>
 </div>

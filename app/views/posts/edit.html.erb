@@ -1,41 +1,41 @@
 <div id="main">
-	<section class="post">
+   <section class="post">
       <h1>Edit Blog</h1>
-		<%= form_for @post, url: {action: "update"}, html: {class: "nifty_form"} do %>
-			<div class="field">
-				<label for="post[title]">Title</label>
-				<input type="text" name="post[title]" value="<%= @post.title %>"/>
-			</div>
-			<div class="field">
-				<label for="post[feature]">Feature</label>
-				<%= @feature_String %><%= @post.feature %>
-				<select name="post[feature]">
-					<% if @post.feature %>
-						<option value="1" selected>Active</option>
-						<option value="0">De-active</option>
-					<% else %>
-						<option value="1">Active</option>
-						<option value="0" selected>De-active</option>
-					<% end %>
-				</select>
-			</div>
-			<div class="field">
-				<label for="post[image_url]">Img Url</label>
-				<input type="text" name="post[image_url]" value="<%= @post.image_url %>"/>
-			</div>
-			<div class="field">
-				<label for="post[slug]">Slug</label>
-				<input type="text" name="post[slug]" value="<%= @post.slug %>"/>
-			</div>
-			<div class="field">
-				<label for="post[content]">Content</label>
-				<textarea type="text" name="post[content]">
-					<%= @post.content %>
-				</textarea>
-			</div>
-			<div class="field">
-				<button type="submit">save</button>
-			</div>
-		<% end %>
-	</section>
+      <%= form_for @post, url: {action: "update"}, html: {class: "nifty_form"} do %>
+         <div class="field">
+	    <label for="post[title]">Title</label>
+	    <input type="text" name="post[title]" value="<%= @post.title %>"/>
+	 </div>
+	 <div class="field">
+	    <label for="post[feature]">Feature</label>
+	    <%= @feature_String %><%= @post.feature %>
+	    <select name="post[feature]">
+            <% if @post.feature %>
+               <option value="1" selected>Active</option>
+	       <option value="0">De-active</option>
+	    <% else %>
+	       <option value="1">Active</option>
+	       <option value="0" selected>De-active</option>
+	     <% end %>
+	    </select>
+	 </div>
+	<div class="field">
+	   <label for="post[image_url]">Img Url</label>
+	    <input type="text" name="post[image_url]" value="<%= @post.image_url %>"/>
+	</div>
+	<div class="field">
+	   <label for="post[slug]">Slug</label>
+	    <input type="text" name="post[slug]" value="<%= @post.slug %>"/>
+	</div>
+	<div class="field">
+           <label for="post[content]">Content</label>
+	   <textarea type="text" name="post[content]">
+	      <%= @post.content %>
+	   </textarea>
+	</div>
+	<div class="field">
+	   <button type="submit">save</button>
+	</div>
+      <% end %>
+   </section>
 </div>
