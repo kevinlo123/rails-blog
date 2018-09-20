@@ -6,7 +6,7 @@
       </header>
       <div class="image main"><img src="<%= @post.image_url %>" alt="" /></div>
       <p><%= @post.content %></p>
-      <a href="/"><i class="fas fa-arrow-left"></i> Go back</a><br>
+      <a href="https://rails-travel-blog.herokuapp.com/"><i class="fas fa-arrow-left"></i> Go back</a><br>
       <a href="/posts/<%= @post.id %>/edit"><i class="fas fa-ellipsis-h"></i> Edit Blog</a><br>
       <a class="btn btn-sm" href="/posts/<%= @post.id %>" data-method="delete">
          <i class="fa fa-trash"></i> <span>Delete</span>
